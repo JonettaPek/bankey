@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41B506D2B16D5780013F611 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B506C2B16D5780013F611 /* OnboardingContainerViewController.swift */; };
+		D41B506F2B171D830013F611 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B506E2B171D830013F611 /* OnboardingViewController.swift */; };
 		D41CC8782B158F8300BF0642 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CC8772B158F8300BF0642 /* LoginView.swift */; };
+		D4CD74232B18693E007A5A96 /* WeatherServiceDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */; };
+		D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */; };
+		D4D7A0192B1860E6002C05EF /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0182B1860E6002C05EF /* WeatherService.swift */; };
+		D4D7A01B2B18610E002C05EF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A01A2B18610E002C05EF /* WeatherViewController.swift */; };
 		D4FEEC172B14F34F0060D4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FEEC162B14F34F0060D4F0 /* AppDelegate.swift */; };
 		D4FEEC1B2B14F34F0060D4F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FEEC1A2B14F34F0060D4F0 /* LoginViewController.swift */; };
 		D4FEEC202B14F3500060D4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4FEEC1F2B14F3500060D4F0 /* Assets.xcassets */; };
@@ -15,7 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D41B506C2B16D5780013F611 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		D41B506E2B171D830013F611 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D41CC8772B158F8300BF0642 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceDS.swift; sourceTree = "<group>"; };
+		D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerDS.swift; sourceTree = "<group>"; };
+		D4D7A0182B1860E6002C05EF /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		D4D7A01A2B18610E002C05EF /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		D4FEEC132B14F34F0060D4F0 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FEEC162B14F34F0060D4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FEEC1A2B14F34F0060D4F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D41B506B2B16D4950013F611 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D41B506C2B16D5780013F611 /* OnboardingContainerViewController.swift */,
+				D41B506E2B171D830013F611 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D41CC8752B158EF100BF0642 /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +73,24 @@
 				D41CC8772B158F8300BF0642 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D4D7A01C2B18688E002C05EF /* DataSource Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */,
+				D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */,
+			);
+			path = "DataSource Pattern";
+			sourceTree = "<group>";
+		};
+		D4D7A01E2B1868BC002C05EF /* Protocol-Delegate Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				D4D7A01A2B18610E002C05EF /* WeatherViewController.swift */,
+				D4D7A0182B1860E6002C05EF /* WeatherService.swift */,
+			);
+			path = "Protocol-Delegate Pattern";
 			sourceTree = "<group>";
 		};
 		D4FEEC0A2B14F34F0060D4F0 = {
@@ -73,6 +112,9 @@
 		D4FEEC152B14F34F0060D4F0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				D4D7A01E2B1868BC002C05EF /* Protocol-Delegate Pattern */,
+				D4D7A01C2B18688E002C05EF /* DataSource Pattern */,
+				D41B506B2B16D4950013F611 /* Onboarding */,
 				D41CC8762B158F5800BF0642 /* Login */,
 				D4FEEC162B14F34F0060D4F0 /* AppDelegate.swift */,
 				D41CC8752B158EF100BF0642 /* Files */,
@@ -150,9 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CD74232B18693E007A5A96 /* WeatherServiceDS.swift in Sources */,
+				D4D7A0192B1860E6002C05EF /* WeatherService.swift in Sources */,
 				D41CC8782B158F8300BF0642 /* LoginView.swift in Sources */,
 				D4FEEC1B2B14F34F0060D4F0 /* LoginViewController.swift in Sources */,
+				D41B506F2B171D830013F611 /* OnboardingViewController.swift in Sources */,
+				D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */,
 				D4FEEC172B14F34F0060D4F0 /* AppDelegate.swift in Sources */,
+				D4D7A01B2B18610E002C05EF /* WeatherViewController.swift in Sources */,
+				D41B506D2B16D5780013F611 /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
