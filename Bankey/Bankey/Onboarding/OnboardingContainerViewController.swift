@@ -18,6 +18,7 @@ class OnboardingContainerViewController: UIViewController {
     let pageViewController: UIPageViewController
     var pages = [UIViewController]()
     var currentVC: UIViewController
+    
     let closeButton = UIButton(type: .system)
     let backButton = UIButton(type: .system)
     let nextButton = UIButton(type: .system)
@@ -83,7 +84,6 @@ class OnboardingContainerViewController: UIViewController {
         backButton.addTarget(self, action: #selector(backButtonTapped), for: .primaryActionTriggered)
         
         nextButton.translatesAutoresizingMaskIntoConstraints = false
-        nextButton.isHidden = false
         nextButton.setTitle("Next", for: [])
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .primaryActionTriggered)
         
@@ -170,7 +170,7 @@ extension OnboardingContainerViewController {
             return
         }
         self.currentVC = previousPage
-        pageViewController.setViewControllers([self.currentVC], direction: .forward, animated: false)
+        pageViewController.setViewControllers([self.currentVC], direction: .forward, animated: false, completion: nil)
         backButton.isHidden = presentationIndex(for: pageViewController) == 0 ? true : false
     }
     
@@ -180,7 +180,7 @@ extension OnboardingContainerViewController {
             return
         }
         self.currentVC = nextPage
-        pageViewController.setViewControllers([self.currentVC], direction: .forward, animated: false)
+        pageViewController.setViewControllers([self.currentVC], direction: .forward, animated: false, completion: nil)
         backButton.isHidden = false
         nextButton.isHidden = presentationIndex(for: pageViewController) == pages.count - 1 ? true : false
         doneButton.isHidden = presentationIndex(for: pageViewController) == pages.count - 1 ? false : true
