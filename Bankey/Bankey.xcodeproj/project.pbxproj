@@ -13,6 +13,7 @@
 		D41B506D2B16D5780013F611 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B506C2B16D5780013F611 /* OnboardingContainerViewController.swift */; };
 		D41B506F2B171D830013F611 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41B506E2B171D830013F611 /* OnboardingViewController.swift */; };
 		D41CC8782B158F8300BF0642 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CC8772B158F8300BF0642 /* LoginView.swift */; };
+		D452F4DD2B1C803300ADDB40 /* TabBarControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452F4DC2B1C803300ADDB40 /* TabBarControllers.swift */; };
 		D4CD74232B18693E007A5A96 /* WeatherServiceDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */; };
 		D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */; };
 		D4D7A0192B1860E6002C05EF /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0182B1860E6002C05EF /* WeatherService.swift */; };
@@ -30,6 +31,7 @@
 		D41B506C2B16D5780013F611 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		D41B506E2B171D830013F611 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D41CC8772B158F8300BF0642 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D452F4DC2B1C803300ADDB40 /* TabBarControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllers.swift; sourceTree = "<group>"; };
 		D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceDS.swift; sourceTree = "<group>"; };
 		D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerDS.swift; sourceTree = "<group>"; };
 		D4D7A0182B1860E6002C05EF /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -90,6 +92,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		D452F4D92B1C7F9900ADDB40 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				D40233F82B19CBEF002CECD5 /* NavigationControllerDemo.swift */,
+				D452F4DC2B1C803300ADDB40 /* TabBarControllers.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 		D4D7A01C2B18688E002C05EF /* DataSource Pattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,13 +138,13 @@
 		D4FEEC152B14F34F0060D4F0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				D452F4D92B1C7F9900ADDB40 /* Containers */,
 				D40233F52B19BE08002CECD5 /* Utils */,
 				D4D7A01E2B1868BC002C05EF /* Protocol-Delegate Pattern */,
 				D4D7A01C2B18688E002C05EF /* DataSource Pattern */,
 				D41B506B2B16D4950013F611 /* Onboarding */,
 				D41CC8762B158F5800BF0642 /* Login */,
 				D4FEEC162B14F34F0060D4F0 /* AppDelegate.swift */,
-				D40233F82B19CBEF002CECD5 /* NavigationControllerDemo.swift */,
 				D41CC8752B158EF100BF0642 /* Files */,
 			);
 			path = Bankey;
@@ -219,6 +230,7 @@
 				D40233F72B19BE19002CECD5 /* LocalState.swift in Sources */,
 				D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */,
 				D4FEEC172B14F34F0060D4F0 /* AppDelegate.swift in Sources */,
+				D452F4DD2B1C803300ADDB40 /* TabBarControllers.swift in Sources */,
 				D4D7A01B2B18610E002C05EF /* WeatherViewController.swift in Sources */,
 				D41B506D2B16D5780013F611 /* OnboardingContainerViewController.swift in Sources */,
 			);
