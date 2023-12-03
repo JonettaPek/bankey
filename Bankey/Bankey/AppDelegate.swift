@@ -29,7 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = LoginViewController()
 //        window?.rootViewController = OnboardingContainerViewController()
 //        window?.rootViewController = OnboardingViewController(withImage: "delorean", withText: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s.")
-        window?.rootViewController = loginViewController
+//        window?.rootViewController = loginViewController
+        
+        let navigationController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = navigationController
         
         return true
     }
