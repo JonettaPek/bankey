@@ -7,6 +7,8 @@
 
 import UIKit
 
+let appColor: UIColor = .systemTeal
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -16,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let dummyViewController = DummyViewController()
+    let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         
@@ -30,26 +33,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = OnboardingContainerViewController()
 //        window?.rootViewController = OnboardingViewController(withImage: "delorean", withText: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s.")
 //        window?.rootViewController = loginViewController
+        window?.rootViewController = mainViewController
         
+        /// Navigation
 //        let navigationController = UINavigationController(rootViewController: ViewController())
 //        window?.rootViewController = navigationController
         
-        let vc1 = SearchViewController()
-        let vc2 = ContactsViewController()
-        let vc3 = FavoritesViewController()
-        
-        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
-        vc3.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        
-        let nc1 = UINavigationController(rootViewController: vc1)
-        let nc2 = UINavigationController(rootViewController: vc2)
-        let nc3 = UINavigationController(rootViewController: vc3)
-        
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [nc1, nc2, nc3]
-        
-        window?.rootViewController = tabBarController
+        /// Tab Bar
+//        let vc1 = SearchViewController()
+//        let vc2 = ContactsViewController()
+//        let vc3 = FavoritesViewController()
+//        
+//        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+//        vc2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+//        vc3.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
+//        
+//        let nc1 = UINavigationController(rootViewController: vc1)
+//        let nc2 = UINavigationController(rootViewController: vc2)
+//        let nc3 = UINavigationController(rootViewController: vc3)
+//        
+//        let tabBarController = UITabBarController()
+//        tabBarController.viewControllers = [nc1, nc2, nc3]
+//        
+//        window?.rootViewController = tabBarController
         
         return true
     }
