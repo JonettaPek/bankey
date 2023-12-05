@@ -16,6 +16,9 @@
 		D452F4DD2B1C803300ADDB40 /* TabBarControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452F4DC2B1C803300ADDB40 /* TabBarControllers.swift */; };
 		D452F4DF2B1C83AD00ADDB40 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452F4DE2B1C83AD00ADDB40 /* UIViewControllerUtils.swift */; };
 		D452F4E12B1C862E00ADDB40 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452F4E02B1C862E00ADDB40 /* MainViewController.swift */; };
+		D452F4E42B1CA70000ADDB40 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D452F4E32B1CA70000ADDB40 /* AccountSummaryViewController.swift */; };
+		D4CCCF5A2B1DB7DA00F9F6D6 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCCF592B1DB7DA00F9F6D6 /* AccountSummaryHeaderView.swift */; };
+		D4CCCF5C2B1DC44C00F9F6D6 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4CCCF5B2B1DC44C00F9F6D6 /* AccountSummaryHeaderView.xib */; };
 		D4CD74232B18693E007A5A96 /* WeatherServiceDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */; };
 		D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */; };
 		D4D7A0192B1860E6002C05EF /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7A0182B1860E6002C05EF /* WeatherService.swift */; };
@@ -36,6 +39,9 @@
 		D452F4DC2B1C803300ADDB40 /* TabBarControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllers.swift; sourceTree = "<group>"; };
 		D452F4DE2B1C83AD00ADDB40 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
 		D452F4E02B1C862E00ADDB40 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D452F4E32B1CA70000ADDB40 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		D4CCCF592B1DB7DA00F9F6D6 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
+		D4CCCF5B2B1DC44C00F9F6D6 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		D4CD74222B18693E007A5A96 /* WeatherServiceDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceDS.swift; sourceTree = "<group>"; };
 		D4CD74242B186BCB007A5A96 /* WeatherViewControllerDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerDS.swift; sourceTree = "<group>"; };
 		D4D7A0182B1860E6002C05EF /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -106,6 +112,16 @@
 			path = Containers;
 			sourceTree = "<group>";
 		};
+		D452F4E22B1CA63900ADDB40 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				D452F4E32B1CA70000ADDB40 /* AccountSummaryViewController.swift */,
+				D4CCCF592B1DB7DA00F9F6D6 /* AccountSummaryHeaderView.swift */,
+				D4CCCF5B2B1DC44C00F9F6D6 /* AccountSummaryHeaderView.xib */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		D4D7A01C2B18688E002C05EF /* DataSource Pattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,14 +159,15 @@
 		D4FEEC152B14F34F0060D4F0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				D452F4D92B1C7F9900ADDB40 /* Containers */,
-				D40233F52B19BE08002CECD5 /* Utils */,
-				D4D7A01E2B1868BC002C05EF /* Protocol-Delegate Pattern */,
-				D4D7A01C2B18688E002C05EF /* DataSource Pattern */,
-				D41B506B2B16D4950013F611 /* Onboarding */,
-				D41CC8762B158F5800BF0642 /* Login */,
 				D4FEEC162B14F34F0060D4F0 /* AppDelegate.swift */,
 				D452F4E02B1C862E00ADDB40 /* MainViewController.swift */,
+				D41CC8762B158F5800BF0642 /* Login */,
+				D41B506B2B16D4950013F611 /* Onboarding */,
+				D452F4E22B1CA63900ADDB40 /* AccountSummary */,
+				D40233F52B19BE08002CECD5 /* Utils */,
+				D452F4D92B1C7F9900ADDB40 /* Containers */,
+				D4D7A01E2B1868BC002C05EF /* Protocol-Delegate Pattern */,
+				D4D7A01C2B18688E002C05EF /* DataSource Pattern */,
 				D41CC8752B158EF100BF0642 /* Files */,
 			);
 			path = Bankey;
@@ -214,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CCCF5C2B1DC44C00F9F6D6 /* AccountSummaryHeaderView.xib in Resources */,
 				D4FEEC232B14F3500060D4F0 /* LaunchScreen.storyboard in Resources */,
 				D4FEEC202B14F3500060D4F0 /* Assets.xcassets in Resources */,
 			);
@@ -229,12 +247,14 @@
 				D4CD74232B18693E007A5A96 /* WeatherServiceDS.swift in Sources */,
 				D4D7A0192B1860E6002C05EF /* WeatherService.swift in Sources */,
 				D452F4DF2B1C83AD00ADDB40 /* UIViewControllerUtils.swift in Sources */,
+				D452F4E42B1CA70000ADDB40 /* AccountSummaryViewController.swift in Sources */,
 				D40233F92B19CBEF002CECD5 /* NavigationControllerDemo.swift in Sources */,
 				D41CC8782B158F8300BF0642 /* LoginView.swift in Sources */,
 				D40233F42B19A29C002CECD5 /* DummyViewController.swift in Sources */,
 				D4FEEC1B2B14F34F0060D4F0 /* LoginViewController.swift in Sources */,
 				D41B506F2B171D830013F611 /* OnboardingViewController.swift in Sources */,
 				D40233F72B19BE19002CECD5 /* LocalState.swift in Sources */,
+				D4CCCF5A2B1DB7DA00F9F6D6 /* AccountSummaryHeaderView.swift in Sources */,
 				D452F4E12B1C862E00ADDB40 /* MainViewController.swift in Sources */,
 				D4CD74252B186BCB007A5A96 /* WeatherViewControllerDS.swift in Sources */,
 				D4FEEC172B14F34F0060D4F0 /* AppDelegate.swift in Sources */,
